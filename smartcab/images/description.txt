@@ -1,0 +1,1 @@
+images used for pygame visualization go in this folder
