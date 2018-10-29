@@ -1,0 +1,454 @@
+/-----------------------------------------
+| State-action rewards from Q-Learning
+\-----------------------------------------
+
+__waypoint_forward__light_green__oncoming_left__left_forward
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.55
+
+__waypoint_right__light_green__oncoming_None__left_forward
+ -- forward : 0.00
+ -- right : 1.21
+ -- None : -2.12
+ -- left : 0.00
+
+__waypoint_forward__light_red__oncoming_None__left_right
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_left__light_red__oncoming_None__left_forward
+ -- forward : -19.61
+ -- right : 0.00
+ -- None : 1.76
+ -- left : -19.58
+
+__waypoint_left__light_red__oncoming_left__left_None
+ -- forward : -5.19
+ -- right : 0.00
+ -- None : 1.86
+ -- left : -4.79
+
+__waypoint_left__light_red__oncoming_None__left_None
+ -- forward : -9.89
+ -- right : 0.89
+ -- None : 2.21
+ -- left : -8.52
+
+__waypoint_right__light_green__oncoming_forward__left_forward
+ -- forward : 0.34
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_left__light_red__oncoming_left__left_forward
+ -- forward : -20.22
+ -- right : 0.00
+ -- None : 0.00
+ -- left : -20.24
+
+__waypoint_right__light_green__oncoming_left__left_left
+ -- forward : 0.00
+ -- right : 1.33
+ -- None : 0.00
+ -- left : 0.47
+
+__waypoint_left__light_red__oncoming_right__left_None
+ -- forward : -4.84
+ -- right : 0.00
+ -- None : 0.80
+ -- left : -19.84
+
+__waypoint_right__light_red__oncoming_None__left_left
+ -- forward : -4.78
+ -- right : 0.97
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_forward__light_red__oncoming_None__left_left
+ -- forward : 0.00
+ -- right : 0.44
+ -- None : 1.43
+ -- left : 0.00
+
+__waypoint_right__light_red__oncoming_forward__left_None
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 0.84
+ -- left : -5.19
+
+__waypoint_forward__light_red__oncoming_right__left_left
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 1.36
+ -- left : 0.00
+
+__waypoint_left__light_green__oncoming_forward__left_forward
+ -- forward : 0.92
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_left__light_red__oncoming_None__left_right
+ -- forward : -7.35
+ -- right : 0.08
+ -- None : 0.99
+ -- left : 0.00
+
+__waypoint_left__light_red__oncoming_forward__left_forward
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 0.00
+ -- left : -19.95
+
+__waypoint_right__light_red__oncoming_None__left_right
+ -- forward : 0.00
+ -- right : 0.89
+ -- None : 0.68
+ -- left : 0.00
+
+__waypoint_left__light_green__oncoming_left__left_right
+ -- forward : 0.61
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_right__light_green__oncoming_left__left_forward
+ -- forward : 0.92
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_forward__light_red__oncoming_right__left_forward
+ -- forward : 0.00
+ -- right : -9.60
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_forward__light_red__oncoming_None__left_forward
+ -- forward : -20.29
+ -- right : 0.00
+ -- None : 1.43
+ -- left : -19.71
+
+__waypoint_right__light_green__oncoming_left__left_right
+ -- forward : 0.00
+ -- right : 0.54
+ -- None : -2.05
+ -- left : 0.00
+
+__waypoint_forward__light_green__oncoming_left__left_left
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.92
+
+__waypoint_left__light_red__oncoming_forward__left_None
+ -- forward : -7.58
+ -- right : 0.22
+ -- None : 1.30
+ -- left : -4.61
+
+__waypoint_right__light_green__oncoming_right__left_None
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_forward__light_red__oncoming_forward__left_right
+ -- forward : -4.85
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_right__light_green__oncoming_None__left_None
+ -- forward : 0.60
+ -- right : 1.26
+ -- None : -4.10
+ -- left : 1.21
+
+__waypoint_right__light_red__oncoming_right__left_None
+ -- forward : 0.00
+ -- right : 1.33
+ -- None : 0.64
+ -- left : 0.00
+
+__waypoint_left__light_red__oncoming_left__left_right
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 0.64
+ -- left : 0.00
+
+__waypoint_right__light_green__oncoming_forward__left_right
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_forward__light_red__oncoming_left__left_forward
+ -- forward : -20.03
+ -- right : -9.86
+ -- None : 0.00
+ -- left : -19.90
+
+__waypoint_forward__light_red__oncoming_left__left_right
+ -- forward : 0.00
+ -- right : 0.33
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_left__light_green__oncoming_None__left_forward
+ -- forward : 0.77
+ -- right : 0.00
+ -- None : -2.23
+ -- left : 0.00
+
+__waypoint_right__light_green__oncoming_left__left_None
+ -- forward : 0.73
+ -- right : 0.00
+ -- None : -2.61
+ -- left : 0.37
+
+__waypoint_right__light_red__oncoming_None__left_forward
+ -- forward : -19.58
+ -- right : -9.54
+ -- None : 0.54
+ -- left : -20.39
+
+__waypoint_forward__light_green__oncoming_None__left_forward
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : -3.25
+ -- left : -0.02
+
+__waypoint_forward__light_green__oncoming_None__left_right
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_forward__light_green__oncoming_right__left_left
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 0.00
+ -- left : -9.89
+
+__waypoint_forward__light_green__oncoming_None__left_None
+ -- forward : 1.35
+ -- right : -0.20
+ -- None : -5.27
+ -- left : 0.48
+
+__waypoint_left__light_green__oncoming_right__left_None
+ -- forward : 0.00
+ -- right : 0.50
+ -- None : 0.00
+ -- left : -9.71
+
+__waypoint_right__light_red__oncoming_left__left_left
+ -- forward : 0.00
+ -- right : 1.05
+ -- None : 0.34
+ -- left : 0.00
+
+__waypoint_left__light_green__oncoming_forward__left_left
+ -- forward : 1.00
+ -- right : 0.21
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_forward__light_red__oncoming_right__left_None
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 0.91
+ -- left : 0.00
+
+__waypoint_right__light_red__oncoming_left__left_forward
+ -- forward : -19.61
+ -- right : -10.00
+ -- None : 0.00
+ -- left : -20.31
+
+__waypoint_left__light_green__oncoming_forward__left_None
+ -- forward : 0.00
+ -- right : 0.47
+ -- None : -4.17
+ -- left : 0.00
+
+__waypoint_forward__light_green__oncoming_right__left_right
+ -- forward : 0.00
+ -- right : 0.25
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_right__light_green__oncoming_forward__left_None
+ -- forward : -0.10
+ -- right : 0.66
+ -- None : 0.00
+ -- left : -15.03
+
+__waypoint_right__light_green__oncoming_None__left_right
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.50
+
+__waypoint_right__light_green__oncoming_forward__left_left
+ -- forward : 0.61
+ -- right : 0.59
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_left__light_green__oncoming_left__left_left
+ -- forward : 0.00
+ -- right : -0.05
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_left__light_red__oncoming_forward__left_left
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 0.00
+ -- left : -19.51
+
+__waypoint_forward__light_red__oncoming_None__left_None
+ -- forward : -5.29
+ -- right : 0.37
+ -- None : 1.65
+ -- left : -8.65
+
+__waypoint_left__light_red__oncoming_left__left_left
+ -- forward : -4.51
+ -- right : 0.00
+ -- None : 0.74
+ -- left : -15.43
+
+__waypoint_left__light_green__oncoming_None__left_right
+ -- forward : 0.00
+ -- right : 0.36
+ -- None : -2.58
+ -- left : 0.00
+
+__waypoint_left__light_green__oncoming_right__left_right
+ -- forward : 0.00
+ -- right : 0.78
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_right__light_green__oncoming_None__left_left
+ -- forward : 0.00
+ -- right : 1.24
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_left__light_green__oncoming_forward__left_right
+ -- forward : 0.00
+ -- right : 1.11
+ -- None : 0.00
+ -- left : -10.26
+
+__waypoint_forward__light_green__oncoming_None__left_left
+ -- forward : 0.00
+ -- right : -0.09
+ -- None : -4.10
+ -- left : 0.78
+
+__waypoint_forward__light_green__oncoming_right__left_forward
+ -- forward : 0.84
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_forward__light_green__oncoming_forward__left_None
+ -- forward : 1.66
+ -- right : 0.91
+ -- None : 0.00
+ -- left : -9.54
+
+__waypoint_left__light_red__oncoming_right__left_forward
+ -- forward : -20.18
+ -- right : -10.38
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_forward__light_red__oncoming_left__left_left
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : 1.09
+ -- left : 0.00
+
+__waypoint_forward__light_green__oncoming_left__left_None
+ -- forward : 2.25
+ -- right : 0.40
+ -- None : -3.91
+ -- left : 0.11
+
+__waypoint_left__light_red__oncoming_forward__left_right
+ -- forward : -4.50
+ -- right : 0.00
+ -- None : 0.00
+ -- left : 0.00
+
+__waypoint_left__light_green__oncoming_left__left_None
+ -- forward : 1.02
+ -- right : 0.61
+ -- None : 0.00
+ -- left : 1.48
+
+__waypoint_right__light_red__oncoming_None__left_None
+ -- forward : -13.39
+ -- right : 1.73
+ -- None : 0.10
+ -- left : -9.26
+
+__waypoint_forward__light_red__oncoming_left__left_None
+ -- forward : -4.87
+ -- right : 0.22
+ -- None : 1.78
+ -- left : -4.82
+
+__waypoint_forward__light_red__oncoming_forward__left_None
+ -- forward : 0.00
+ -- right : 0.19
+ -- None : 1.51
+ -- left : 0.00
+
+__waypoint_left__light_green__oncoming_None__left_None
+ -- forward : 0.00
+ -- right : 0.75
+ -- None : -2.97
+ -- left : 2.09
+
+__waypoint_left__light_green__oncoming_right__left_forward
+ -- forward : 0.00
+ -- right : 0.76
+ -- None : 0.00
+ -- left : -9.95
+
+__waypoint_right__light_red__oncoming_left__left_None
+ -- forward : -8.01
+ -- right : 2.19
+ -- None : 0.28
+ -- left : 0.00
+
+__waypoint_left__light_green__oncoming_right__left_left
+ -- forward : 0.00
+ -- right : 0.00
+ -- None : -2.29
+ -- left : -10.00
+
+__waypoint_left__light_green__oncoming_None__left_left
+ -- forward : 0.00
+ -- right : 0.53
+ -- None : -4.99
+ -- left : 0.00
+
+__waypoint_left__light_red__oncoming_None__left_left
+ -- forward : -15.09
+ -- right : 0.00
+ -- None : 1.16
+ -- left : -22.98
+
