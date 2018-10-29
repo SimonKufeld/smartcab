@@ -17,4 +17,12 @@ Some fun applications:
 
 Subscribe:  
 - https://jack-clark.net/  
-- https://blog.openai.com/subscribe/  
+- https://blog.openai.com/subscribe/   
+
+State of the art applications:
+- https://youtu.be/eaBYhLttETw  
+- https://youtu.be/Wujy7OzvdJk  
+
+What are the implications of A.I.:
+- https://www.youtube.com/watch?v=h0962biiZa4
+
