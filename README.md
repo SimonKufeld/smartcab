@@ -7,7 +7,7 @@
 The big players:  
 - https://gym.openai.com/  
 - https://blog.openai.com/openai-five/  
-- https://deepmind.com/
+- https://deepmind.com/  
 Some fun applications:  
 - https://medium.com/@aymen.mouelhi/multi-agents-self-driving-mario-kart-with-tensorflow-and-cnns-c0f2812b4c50  
 - http://cs231n.stanford.edu/reports/2017/pdfs/624.pdf  
